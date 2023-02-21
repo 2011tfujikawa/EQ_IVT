@@ -32,7 +32,7 @@ with st.form("my_form", clear_on_submit=False):
   with col2:
     st.write("Data includes dividends.")
     st.write("Data:From 2019-10-1 To 2023-02-17")
-    st.write("Avalable Symbols: Nikkei225 Componets + Apple,Amazon,Google and Microsoft")
+    st.write("Avalable[Nikkei225 Componets + Apple,Amazon,Google and Microsoft]")
     if submitted:
       data2_yf= IN[IN.index>=pd.to_datetime(ST)][codelist].dropna().copy()
       each=1000000*inv/len(codelist) 
