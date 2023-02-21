@@ -15,9 +15,6 @@ N225=["1332.T",	"1605.T",	"1721.T",	"1801.T",	"1802.T",	"1803.T",	"1808.T",	"181
 df_analyse=pd.DataFrame()
 with open('./TSE20230222_N225US.pickle', mode='rb') as fp :
   IN= pickle.load(fp)
-      
-
-st.title("Equal Weight Vis-Tool")
 
 with st.form("my_form", clear_on_submit=False):
   col1, col2 = st.columns([1,3])
@@ -29,6 +26,7 @@ with st.form("my_form", clear_on_submit=False):
 
 
   with col2:
+    st.write("Equal Weight Vis-Tool")
     st.write("Data includes dividends.")
     st.write("Data:From 2019-10-1 To 2023-02-17")
     st.write("Avalable[Nikkei225 Componets + Apple,Amazon,Google and Microsoft]")
