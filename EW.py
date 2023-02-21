@@ -4,9 +4,6 @@ import numpy as np
 import pandas as pd
 import datetime
 import yfinance as yf
-import pickle
-import plotly.figure_factory as ff
-from dateutil.relativedelta import relativedelta
 
 start = datetime.date(2019,10,1)
 end_D = datetime.date.today()
