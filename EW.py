@@ -32,7 +32,7 @@ with st.form("my_form", clear_on_submit=False):
   with col2:
     st.write("Data includes dividends.")
     if submitted:
-      data2_yf= IN[IN.index>=pd.to_datetime(ST)].copy()
+      data2_yf= IN[IN.index>=pd.to_datetime(ST)][codelist].dropna().copy()
       each=1000000*inv/len(codelist) 
 
       fig, ax=plt.subplots()
