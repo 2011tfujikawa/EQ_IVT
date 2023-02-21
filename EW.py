@@ -22,7 +22,6 @@ st.title("Equal Weight Vis-Tool")
 with st.form("my_form", clear_on_submit=False):
   col1, col2 = st.columns([1,3])
   with col1:
-    st.write("Start Investment")
     ST = st.date_input('From', value=start_D)
     codelist = st.multiselect('code@Yahoo Finance! US',N225,default=Tokyo)
     inv = st.slider('Total Investment(million)', 0,100, 10,)
