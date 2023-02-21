@@ -17,7 +17,7 @@ with open('./TSE20230222_N225US.pickle', mode='rb') as fp :
   IN= pickle.load(fp)
       
 
-st.title("Equal Weight Investment Visualization Tool")
+st.title("Equal Weight Vis-Tool")
 
 with st.form("my_form", clear_on_submit=False):
   col1, col2 = st.columns([1,3])
