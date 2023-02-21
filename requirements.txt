@@ -1,6 +1,6 @@
-streamlit 
-matplotlib.pyplot
-numpy 
-pandas 
+streamlit==1.16.0
+matplotlib
+numpy
+pandas
 datetime
 yfinance 
