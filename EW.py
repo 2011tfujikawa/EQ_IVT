@@ -28,9 +28,6 @@ with st.form("my_form", clear_on_submit=False):
     st.write("Data includes dividends.")
     if submitted:
       data2_yf = yf.download(codelist, start=ST, end=end_D)["Adj Close"]
-      #with open('./TSE20230221_9.pickle', mode='rb') as fp :
-      #  IN= pickle.load(fp)
-      #data2_yf= IN[IN.index>=pd.to_datetime(ST)].copy()
       each=1000000*inv/len(codelist) 
 
       fig, ax=plt.subplots()
