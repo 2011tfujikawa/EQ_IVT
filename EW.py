@@ -13,7 +13,7 @@ N225=["1332.T",	"1605.T",	"1721.T",	"1801.T",	"1802.T",	"1803.T",	"1808.T",	"181
 ]
 
 df_analyse=pd.DataFrame()
-with open('./TSE20230221_9.pickle', mode='rb') as fp :
+with open('./TSE20230222_N225US.pickle', mode='rb') as fp :
   IN= pickle.load(fp)
       
 
