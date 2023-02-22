@@ -36,7 +36,7 @@ with st.form("my_form", clear_on_submit=False):
 
       fig, ax=plt.subplots()
 
-      (0.0000001*round(each/data2_yf.head(1)).values*data2_yf).sum(axis=1).plot()
+      (0.000001*round(each/data2_yf.head(1)).values*data2_yf).sum(axis=1).plot()
       plt.grid()
       st.pyplot(fig)
       st.write("Last Trade date :" ,data2_yf.index[-1])
