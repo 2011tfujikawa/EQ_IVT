@@ -29,7 +29,7 @@ with st.form("my_form", clear_on_submit=False):
     st.write("Equal Weight Vis-Tool")
     st.write("Data includes dividends.")
     st.write("From 2019-10-1 To 2023-02-17")
-    st.write("Avalable[Nikkei225 Componets + Apple,Amazon,Google and Microsoft]")
+    st.write("Available[Nikkei225 Componets + Apple,Amazon,Google and Microsoft]")
     if submitted:
       data2_yf= IN[(IN.index>=pd.to_datetime(ST))&(IN.index<=pd.to_datetime(end_D))][codelist].dropna().copy()
       each=1000000*inv/len(codelist) 
